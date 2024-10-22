@@ -7,7 +7,8 @@ import { CommonModule } from '@angular/common';  // Import CommonModule for *ngF
 @Component({
   selector: 'app-team',  // The selector is optional here as we're bootstrapping it directly
   standalone: true,  // Standalone component
-  imports: [HttpClientModule, FormsModule, CommonModule],  // Add CommonModule here for *ngFor and *ngIf
+  // you can optimize the imports by using NgIf and NgFor imports directly (or use the new control flow syntax)
+  imports: [FormsModule, CommonModule],  // Add CommonModule here for *ngFor and *ngIf
   templateUrl: './teams.component.html',  // Ensure this points to your actual HTML file
 })
 export class TeamComponent implements OnInit {
